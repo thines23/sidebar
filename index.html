@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="sidebarApp">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST | side Bar | this project</title>
+    <link rel="stylesheet" href="public\resources\css\nav.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".menu-icon").click(function(){
+            $(".menu-icon").toggleClass("active")
+        })
+
+        $(".menu-icon").click(function(){
+            $(".sidebar").toggleClass("active")
+        })
+      })
+
+
+    </script>
+    </head>
+    <body>
+
+      <!-- SIDE BAR content-->
+        <div class="sidebar">
+          <div class="iconHeader">
+              <h1><a href="#">EVENT FINDER APP</a></h1>
+          </div>
+
+            <a href="#"><img src="public\resources\img\randomlogo.png"></a><!--where logo will be placed-->
+            <nav>
+              <ul class="menu">
+                <li><a href="#"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+
+
+              <ul class="social-icon">
+                  <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"></a></li>
+              </ul>
+
+              <div class="bttmBar">
+                  <input class="signoutBtn" type="button" name="signout" value="Sign-Out">
+              </div>
+            </nav>
+
+            <!--BUTTON -->
+              <div class="menu-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+        </div>
+      <!-- sidebar-->
+
+    <!--Main Content -->
+      <div id="mainContent">
+        <!-- angular templating -->
+       <!-- this is where content will be injected -->
+
+
+        <div ng-view></div>
+
+      </div>
+    <!-- end of Main Content -->
+
+
+    <!-- <div ng-view></div> -->
+
+    <script src="node_modules\angular\angular.min.js"></script>
+          <script src="node_modules\angular-route\angular-route.min.js"></script>
+              <script src="node_modules\angular-material\angular-material.min.js"></script>
+                <script src="public\resources\app.js"></script>
+
+  </body>
+</html>

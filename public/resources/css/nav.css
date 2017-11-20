@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: lightgrey;
+}
+.sidebar {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background: #1f1a1a;
+  width: 250px;
+  height: 100%;
+  transition: .3s;
+}
+/*button style and animation */
+.menu-icon {
+  position: absolute;
+  top: 0px;
+  right: -50px;
+  width:50px;
+  height: 50px;
+  background: #201a1a;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.menu-icon span {
+  width: 100%;
+  height: 4px;
+  display: block;
+  background: #fff;
+  margin: 6px 0;
+  transition: .5s;
+}
+/*sidebar style and animation */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background: #1f1a1a;
+  transition: .5s;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar.menu {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.sidebar .menu li {
+  list-style: none;
+  font-family: sans-serif;
+}
+.sidebar .menu li a {
+  display: block;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.sidebar .menu li a:hover {
+  background: #114420;
+  color: #6dedcf;
+}
+
+.social-icon {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 17em;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.social-icon li {
+   width: 40px;
+   padding: 10px;
+   text-align: center;
+   list-style: none;
+}
+.social-icon li a {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  height: 40px;
+  width:  40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+  transition: .5s;
+}
+
+.social-icon li a:hover {
+  background: #1d9189;
+}
+/* JQUERY animation for toggleswitch*/
+.menu-icon.active {
+  background:#7dcc49;
+}
+.menu-icon.active span {
+  position: absolute;
+  width: calc(100% - 16px);
+  top: calc(50% - 8px);
+}
+.menu-icon.active span:nth-child(1){
+  transform: rotate(40deg);
+}
+.menu-icon.active span:nth-child(3){
+  transform: rotate(-45deg);
+}
+.menu-icon.active span:nth-child(2){
+    display: none;
+}
+/*sign-out button */
+
+.signoutBtn {
+    position: absolute;
+    bottom: 17em;
+    left: 0;
+    padding: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: #bf1616;
+    color: #fff;
+    font-family: sans-serif;
+    display: block;
+    width: 100%;
+}

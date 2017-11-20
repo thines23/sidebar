@@ -1,0 +1,26 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "description": "sidebar for this project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thines23/sidebar-navigation-.git"
+  },
+  "author": "th",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thines23/sidebar-navigation-/issues"
+  },
+  "homepage": "https://github.com/thines23/sidebar-navigation-#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-material": "^1.1.5",
+    "angular-route": "^1.6.6",
+    "express": "^4.16.2"
+  }
+}
